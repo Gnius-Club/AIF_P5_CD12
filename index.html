@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciudadanía Digital 12: Avalancha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">🧑‍💻</span> <strong>Ciudadanía Digital Misión 12: Avalancha</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">👁️</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender el tema "¿Y Si la IA Aprende Mal?" (ACD, ERD).</li>
+                                        <li>Entender cómo los datos injustos generan consecuencias.</li>
+                                        <li>Conocer qué es Big Data con ejemplos cotidianos.</li>
+                                        <li>Comprender cómo la IA aprende patrones a partir de muchos ejemplos que ve en internet o plataformas.</li>
+                                        <li>Identificar cómo los sesgos en los datos generan decisiones injustas en la IA.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">Recuerdo Relámpago</strong></li>
+                                        <li><strong class="tactic-highlight">Conexión Ada</strong></li>
+                                        <li><strong class="tactic-highlight">Challenge Express: El Algoritmo de Contratación</strong></li>
+                                        <li><strong class="tactic-highlight">Ticket de Salida/Tweet de Aprendizaje</strong></li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Aplicación en equipo de un algoritmo sesgado a perfiles de candidatos.</li>
+                                        <li>Análisis en equipo de las consecuencias injustas generadas.</li>
+                                        <li>Discusión en equipo sobre el origen del problema (datos sesgados).</li>
+                                        <li>Creación individual de un "Principio sobre Datos Justos" (Tweet de Aprendizaje).</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Chat de "Ada" activo y funcionando.</li>
+                                        <li>Presentación de diapositivas.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (ej. tabletas, ordenadores).</li>
+                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
+                                                <li>Probar el chat "Ada" para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Recuerdo Relámpago ⏰ 5 minutos</h2>
+                <p>Activar conocimientos de la Misión 11 (riesgos vs. oportunidades de la huella digital) a través de la síntesis y el pensamiento ágil.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recuerdo Relámpago ⏰ 3 minutos</h3>
+                            <p>Proyecta Diapositiva 2. Recuerdo Relámpago: Duelo Relámpago.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Vamos a iniciar con un análisis rápido. La dinámica es un Duelo Relámpago sobre la misión anterior. Uno de ustedes lanza una pregunta directa a un compañero sobre los riesgos y oportunidades de la huella digital. Si responde bien, toma el control y lanza la siguiente. <br>(Preguntas Guía):<br>- ‘Menciona una oportunidad de tener un perfil público.’<br>- ‘Describe un riesgo de compartir demasiada información.’”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recuerdo Relámpago ⏰ 2 minutos</h3>
+                            <p>Realiza una breve reflexión guiada para introducir el concepto de IA y Big Data.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Bien. Ya entendemos que nuestra huella digital crea una imagen pública. Ahora, ¿qué pasaría si alguien tomara millones de esas huellas digitales para enseñarle a una máquina a tomar decisiones? 🤔 Hoy, vamos a explorar la Inteligencia Artificial. Una avalancha empieza con un copo de nieve, pero al rodar, acumula una masa enorme. Así funciona la IA: aprende de una avalancha de datos. Pero, ¿y si esos datos iniciales están... chuecos? Vamos a investigarlo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: Conexión Ada ⏰ 20 minutos</h2>
+                <p>Explorar de forma individual los conceptos de Big Data, aprendizaje de patrones y cómo un sesgo en los datos puede llevar a una IA a conclusiones injustas.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión Ada ⏰ 0 minutos</h3>
+                            <p>Proyecta Diapositiva 3. Conexión Ada: Misión Avalancha.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Ahora, conéctense a la plataforma. Ada les mostrará, con ejemplos simples, cómo una IA aprende a reconocer cosas (como gatos en fotos) viendo miles de ejemplos. Luego, les planteará qué pasa si solo le mostramos gatos de un solo color. La clave de activación de hoy es: Misión Avalancha 🌨️. Escríbanla cuando se las pida.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Conexión Ada ⏰ 20 minutos</h3>
+                            <p>Proyecta Diapositiva 4. Timer 20 min.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: Challenge Express ⏰ 10 minutos</h2>
+                <p>Contextualizar cómo una IA puede tomar decisiones importantes y sesgadas en el mundo real.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 5. Challenge Express: El Algoritmo de Contratación.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Atención, programadores. Una gran empresa de videojuegos ha creado una IA para contratar a su próximo diseñador de personajes. La IA fue entrenada analizando los perfiles de los 100 mejores diseñadores que ya trabajan ahí. Resulta que, por casualidad, la mayoría de esos diseñadores son hombres y usan lentes. <br>Este es su reto: En equipos, ustedes son el algoritmo. Su única regla para ‘contratar’ es seguir el patrón que aprendieron: el candidato debe ser hombre y usar lentes. Voy a mostrarles 6 perfiles de candidatos. Su trabajo es aplicar su regla y decidir a quién contratan y a quién rechazan.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Pide a los equipos que apliquen la regla "candidato debe ser hombre y usar lentes" a los 6 perfiles diversos y anoten sus decisiones.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"“Aquí están los candidatos. Analicen cada perfil, pero recuerden su programación: su única tarea es aplicar el patrón que aprendieron. No pueden usar su propio juicio, solo la regla. Decidan quiénes cumplen el criterio y quiénes no. Anoten sus decisiones. Tienen 3 minutos.<br>👤 Candidatos para Diseñador de Videojuegos:<br>1. Ana: Mujer, 10 años de experiencia en diseño de personajes. Su portafolio es impresionante.<br>2. Javier: Hombre, 5 años de experiencia. En su foto de perfil lleva unos modernos lentes de pasta negra.<br>3. Sofía: Mujer, muy talentosa, usa lentes para proteger su vista de la computadora, pero no los necesita para ver.<br>4. Carlos: Hombre, un genio del diseño 3D. Menciona en su biografía que usa lentes de contacto desde los 15 años.<br>5. Miguel: Hombre, recién graduado con mucho potencial. Su foto lo muestra con unos lentes de sol muy llamativos.<br>6. David: Hombre, 8 años de experiencia. No usa lentes. Su trabajo ha ganado premios.<br>¿A quién contrata su algoritmo?”<br>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Challenge Express ⏰ 3 minutos</h3>
+                            <p>Guía una discusión sobre los resultados: ¿fue justo el resultado? ¿Cuál fue el problema real: la IA o los datos con los que aprendió?</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Bien, ‘algoritmos’, ¿a quiénes contrataron? ¿A quiénes rechazaron? Ahora, salgan de su programación y piensen como humanos. Miren a los candidatos que rechazaron. ¿Había mujeres talentosas? ¿Había hombres sin lentes con gran experiencia? ¿Fue justo el resultado? ¿Cuál fue el problema real aquí: la IA o los datos con los que aprendió?”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Challenge Express ⏰ 2 minutos</h3>
+                            <p>Pide a los equipos que compartan su conclusión sobre el problema de fondo (los datos sesgados) y sus implicaciones.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Es buena idea compartir lo que piensan. ¿Cuál es la conclusión de su equipo? ¿Por qué la IA tomó una decisión injusta? Escuchar otras perspectivas sobre dónde estuvo el error original nos ayuda a entender mejor el problema.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                <h2>⚡ Actividad 4: Ticket de Salida/Tweet de Aprendizaje ⏰ 5 minutos</h2>
+                <p>Sintetizar el aprendizaje en un principio personal sobre la importancia de datos justos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Proyecta Diapositiva 9. Tweet de Aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Para cerrar, anoten una idea clave que se quieran llevar. Una frase que resuma su principio sobre cómo debería aprender la IA.<br>Ejemplo del maestro: Una IA solo puede ser tan justa como los datos que la alimentan. Basura entra, basura sale. #DatosSinSesgos<br>Piensen en cómo podrían aplicar esto en otra situación. Eso es lo que hace que valga la pena.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ticket de Salida/Tweet de Aprendizaje ⏰ 2 minutos</h3>
+                            <p>Pide a los estudiantes que compartan su frase con un compañero y escuchen su idea.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Compartan su frase con la persona de al lado. Escuchen su idea. ¿En qué se parecen? ¿Qué pueden aprender de su perspectiva? El análisis mejora con el diálogo.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Ticket de Salida/Tweet de Aprendizaje ⏰ 1 minutos</h3>
+                            <p>Proyecta Diapositiva 10. Reflexión final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">“Hoy no solo hablaron de IA, actuaron como una. Sintieron en carne propia cómo un patrón incompleto lleva a una conclusión injusta. Han aprendido a mirar más allá de la máquina, a cuestionar los datos que la forman. Esa es una habilidad crítica en el mundo que viene. Misión completada.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
